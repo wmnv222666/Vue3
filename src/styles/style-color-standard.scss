@@ -1,0 +1,26 @@
+@import 'src/styles/colors';
+@import 'src/styles/common';
+
+@include style-color(active, $ACTIVE);
+@include style-color(hover, $HOVER);
+@include style-color(main, $MAIN);
+@include style-color(disabled, $DISABLED);
+@include style-color(shadow, $SHADOW);
+@include style-color(background, $BACKGROUND);
+
+@include style-color(success, $SUCCESS);
+@include style-color(warning, $WARNING);
+@include style-color(error, $ERROR);
+@include style-color(info, $INFO);
+
+@include style-color(1, $COLOR_1);
+@include style-color(3, $COLOR_3);
+@include style-color(6, $COLOR_6);
+@include style-color(9, $COLOR_9);
+@include style-color(b, $COLOR_B);
+@include style-color(c, $COLOR_C);
+@include style-color(e, $COLOR_E);
+@include style-color(f, $COLOR_F);
+
+@include style-color(global-bg, $GLOBAL_BG);
+@include style-color(global-bgl, $GLOBAL_BGL);

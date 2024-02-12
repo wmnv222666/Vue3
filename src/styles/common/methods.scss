@@ -1,0 +1,23 @@
+@mixin style-color($status, $color) {
+  .text-#{$status} {
+    color: $color;
+  }
+  .bg-#{$status} {
+    background-color: $color;
+  }
+  .border-#{$status} {
+    border: 1px solid $color;
+  }
+  .border-top-#{$status} {
+    border-top: 1px solid $color;
+  }
+  .border-bottom-#{$status} {
+    border-bottom: 1px solid $color;
+  }
+  .border-left-#{$status} {
+    border-left: 1px solid $color;
+  }
+  .border-right-#{$status} {
+    border-right: 1px solid $color;
+  }
+}

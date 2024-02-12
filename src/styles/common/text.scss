@@ -1,0 +1,32 @@
+@for $i from 1 to 51 {
+  .font-#{$i*1} {
+    font-size: $i * 1px;
+  }
+}
+
+.text-ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.text-unselect {
+  user-select: none;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-bold {
+  font-weight: bold;
+}

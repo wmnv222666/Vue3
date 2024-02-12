@@ -1,0 +1,65 @@
+@import 'style-color-standard';
+@import 'fonts';
+@import 'constants';
+
+html,
+body {
+  font-family: Nunito, SourceHanSansSC-regular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans';
+  margin: 0;
+}
+
+.route-wrapper {
+  height: calc(100vh - #{$NavHeight});
+  min-height: 300px;
+}
+
+.n-input .n-input__placeholder {
+  line-height: 34px;
+}
+
+.n-data-table {
+  flex-direction: column-reverse;
+
+  .n-data-table__pagination {
+    margin: 0 0 12px;
+
+    .n-pagination {
+      flex-wrap: wrap;
+    }
+  }
+
+  .n-data-table-th {
+    white-space: nowrap;
+  }
+}
+
+.n-menu .n-submenu {
+  overflow: hidden;
+}
+
+.btn-icon {
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      opacity: 1;
+    }
+  }
+
+  + .btn-icon {
+    margin-left: 8px;
+  }
+}
+
+.n-form.n-form--inline {
+  flex-wrap: wrap;
+  min-width: 600px;
+}

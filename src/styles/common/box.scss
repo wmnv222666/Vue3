@@ -1,0 +1,97 @@
+$unit: 1px;
+@mixin width($a) {
+  .width-#{$a} {
+    width: $a * $unit;
+  }
+}
+
+@mixin height($a) {
+  .height-#{$a} {
+    height: $a * $unit;
+  }
+}
+
+@mixin line-height($a) {
+  .line-height-#{$a} {
+    line-height: $a * $unit;
+  }
+}
+
+@mixin width-percentage($a) {
+  .width-#{$a}p {
+    width: $a * 1%;
+  }
+}
+
+@mixin radius($a) {
+  .radius-#{$a} {
+    border-radius: $a * $unit;
+  }
+}
+
+@mixin margin($a) {
+  .margin-#{$a} {
+    margin: $a * $unit;
+  }
+}
+
+@mixin padding($a) {
+  .padding-#{$a} {
+    padding: $a * $unit;
+  }
+}
+
+@mixin base($name, $a) {
+  .#{$name}-top-#{$a} {
+    #{$name}-top: $a * $unit;
+  }
+  .#{$name}-bottom-#{$a} {
+    #{$name}-bottom: $a * $unit;
+  }
+  .#{$name}-left-#{$a} {
+    #{$name}-left: $a * $unit;
+  }
+  .#{$name}-right-#{$a} {
+    #{$name}-right: $a * $unit;
+  }
+}
+
+@mixin margin-x($a) {
+  @include base('margin', $a);
+}
+
+@mixin padding-x($a) {
+  @include base('padding', $a);
+}
+
+@for $i from 0 to 51 {
+  @include width-percentage(2 * $i);
+  @include width(2 * $i);
+  @include height(2 * $i);
+  @include line-height(2 * $i);
+  @include margin(2 * $i);
+  @include padding(2 * $i);
+  @include radius(2 * $i);
+}
+
+@for $i from 0 to 51 {
+  @include margin-x(2 * $i);
+  @include padding-x(2 * $i);
+}
+
+@for $i from 26 to 101 {
+  @include width(4 * $i);
+}
+
+.margin-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.min-height {
+  min-height: 0;
+}
+
+.height-100p {
+  height: 100%;
+}
